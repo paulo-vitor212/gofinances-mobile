@@ -1,20 +1,13 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
-import { Welcome } from "./src/Components/Welcome";
+import { ThemeProvider } from "styled-components";
+
+import theme from "./src/global/styles/theme";
+import { Dashboard } from "./src/screens/Dashboard/Dashboard";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Welcome title="Hello Word" />
-    </View>
+    <ThemeProvider theme={theme}>
+      <Dashboard />
+    </ThemeProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
