@@ -15,26 +15,11 @@ export default {
     title: '#363F5F',
     text: '#969CB2',
     background: '#F0F2F5'
-  }
-}
+  },
 
-declare module 'styled-components' {
-  export interface DefaultTheme {
-    colors: {
-      primary: string;
-      seconday: string;
-      secondary_light: string,
-
-      success: string,
-      success_light: string,
-
-      attention: string,
-      attetion_light: string,
-
-      shape: string,
-      title: string,
-      text: string,
-      background: string
-    }
+  fonts: {
+    regular: 'Poppins_400Regular',
+    medium: 'Poppins_500Medium',
+    bold: 'Poppins_700Bold',
   }
 }
